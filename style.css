@@ -1,0 +1,278 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.parent-div{
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.4s;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-top: 1%;
+}
+.btnn {
+  width: calc(48% - 20px);
+  text-align: center;
+  background-color: #FBC02D;
+  color: #333;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  margin-bottom: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+#btn2{
+  outline-style: dotted;
+  background-color: rgb(120, 235, 180);
+}
+
+.btn {
+  background-color: #FBC02D;
+  color: #333;
+  border: none;
+  padding: 10px 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f0e68c;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(0.95);
+}
+
+.select-box {
+  background-color: #FBC02D;
+  color: #333;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+select option:first-child {
+  display: none;
+}
+
+.select-box:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #f0e68c;
+  transform: scale(0.95);
+}
+
+.select-box option{
+  background-color: white;
+}
+
+.weather-background {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  background-image: url("https://img.lovepik.com/background/20211022/medium/lovepik-abstract-blue-background-image_401898761.jpg");
+  padding-top: 20px;
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 330px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: -10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.weather-card {
+  background-color: #012034;
+  margin: auto;
+  width: 480px;
+  height: 310px;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: rgb(131, 128, 141);
+  border-style: solid;
+}
+
+.weather-today span {
+  opacity: 0.5;
+  font-size: small;
+}
+
+div.date {
+  font-size: 10px;
+  margin-top: -15px;
+  font-weight: bold;
+  color:rgba(198, 198, 242, 0.779);
+}
+
+#w-name{
+  background-image: url(https://www.decogergi.com/wp-content/uploads/2017/07/G%C3%B6ky%C3%BCz%C3%BC-A%C4%9Fa%C3%A7-%C3%87i%C3%A7ek-288.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 30px; 
+  font-size: 38px;
+}
+
+#w-name2{
+  background-image: url(images/sky2.png);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#detail {
+  margin-top: 30px;
+  margin-right: 0px;
+  padding: 9px 30px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px 100px / 120px
+}
+#detail:hover{
+  transform: scale(1.1);
+}
+
+#home:hover{
+  transform: scale(1.1);
+}
+
+#home {
+  margin-top: 30px;
+  background-color: rgb(241, 149, 180);
+  padding: 9px 18px;
+  font-size: 15px;
+  text-decoration: none; 
+  font-weight: bold; 
+  border-radius: 10px 100px / 120px
+}
+
+.btn-container {
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.temp{
+  margin-top: 0; 
+  padding: 4px; 
+  max-width: 60px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color: rgba(128, 128, 128, 0.138); 
+  color: #fff; 
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  .btn {
+    padding: 10px 6%;
+  }
+}
+@media only screen and (max-width: 674px) {
+  .btn {
+    padding: 10px 5%;
+  }
+  .weather-background{
+    width: 420px;
+  }
+  .weather-card{
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 594px) {
+  .btn {
+    padding: 10px 3%;
+  }
+  .weather-background{
+    width: 380px;
+  }
+  .weather-card{
+    width: 360px;
+  }
+  #w-name2{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .btn {
+    padding: 10px 2%;
+  }
+  .weather-background{
+    width: 340px;
+  }
+  .weather-card{
+    width: 320px;
+  }
+  #w-name2{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .btn {
+    padding: 10px 1%;
+  }
+  .weather-background{
+    width: 310px;
+  }
+  .weather-card{
+    width: 290px;
+  }
+  #w-name2{
+    font-size: 15px;
+  }
+  #res{
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .btn {
+    padding: 10px 0;
+  }
+  .weather-background{
+    width: 290px;
+  }
+  .weather-card{
+    width: 270px;
+  }
+  #w-name {
+    font-weight: lighter;
+    font-size: small;
+  }
+}
+
