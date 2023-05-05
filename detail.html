@@ -1,0 +1,39 @@
+    <div class="parent-div">
+    <div class="button-group">
+        <div class="btnn" >{{currentCity}}, Turkey</div>
+        
+        <div class="btnn" id="btn2">{{today}}</div>
+    </div>
+    <div class="weather-background">
+        <div class="weather-card" >
+            <div class="weather-header">
+              <div class="date">Saat : {{hour}}</div>
+                <h2 id="w-name2" style="margin-top: 20px;">{{currentCity}} Hava Durumu Detayları</h2>
+            </div>
+            <div class="weather-today" style="display: flex; flex-direction: row; align-items: center; ">
+                <div  style="flex: 1; padding-top: 15px;">
+                    <img id="weather-icon" style="width: 50px; max-height: 60px;" ng-src="{{getWeatherIconUrl(weatherDetail.list[0].weather[0].id)}}" alt="yagmur">
+                  <h5 style="margin-top:10px">{{weatherDetail.list[0].weather[0].description}}</h5>
+                </div>
+                <div style="flex: 1; margin-top: -13px; ">
+                  <h3 style="padding: 5px; background-color: rgba(128, 128, 128, 0.138); color: #fff; border-radius: 10px;">{{weatherDetail.list[0].main.temp}} &#8451;</h3>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <h5><img style="max-width: 12px;"src="images/humidity.png" alt=""> Nem<br> {{weatherDetail.list[0].main.humidity}} %</h5>
+                  <h5 style="margin-top: -10px;"><img style="max-width: 12px;"src="images/wind.png" alt=""> Rüzgar Hızı <br> {{weatherDetail.list[0].wind.speed}} m/s</h5>
+                </div>
+              </div>
+              <div class="weather-forecast" style="margin-top:-5px;display: flex; flex-direction: row;">
+                <div style="flex: 1; justify-content: space-between;"ng-repeat="forecast in myWeatherData">
+                  <h5 id="day">{{returnNowDay($index)}}</h5>
+                  <img style="margin-top: -10px; padding-top:0%; max-width: 35px; max-height: 35px;" ng-src="{{getWeatherIconUrl(forecast.weather[0].id)}}" alt="{{forecast.weather[0].id}}">
+                  <h5 class="temp">{{forecast.main.temp}}°C</h5>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+    <div class="btn-container" style="justify-content: flex-start;">
+        <a class="btn" id="home" ng-href="#!/main"><img style="max-width: 10px;"src="images/back.png" alt=""> Anasayfaya Git</a>
+    </div>
+</div>

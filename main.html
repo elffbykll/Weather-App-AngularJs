@@ -1,0 +1,32 @@
+<div ng-controller="WeatherController" class="parent-div" id="main">
+    <div class="button-group">
+        <button class="btn" ng-click="setCity('Ankara')">Ankara</button>
+        <button class="btn" ng-click="setCity('İstanbul')">İstanbul</button>
+        <button class="btn" ng-click="setCity('İzmir')">İzmir</button>
+        <select class="select-box" ng-model="selectedCity" ng-options="city for city in cities"
+            ng-change="setCity(selectedCity)">
+            <option value="" selected disabled>İl Seçin</option>
+        </select>
+    </div>
+    <div class="weather-background">
+        <div class="weather-card" ng-if="weather">
+            <div class="weather-header">
+                <div class="date">{{today}}</div>  
+                <h1 id="w-name" style="margin-top: 30px; font-size: 38px;">{{weather.city.name}} , Turkey</h1>
+            </div>
+            <div class="weather-today">
+                <img style="margin-top: -10px; width: 70px; max-height: 70px;" ng-src="{{ getWeatherIconUrl(weather.list[0].weather[0].id) }}" alt="{{ weather.list[0].weather[0].id }}">
+                <h4 style="margin-top: 10px;">{{weather.list[0].weather[0].description}}</h4>
+                <h2><img style="max-width: 17px;" src="images/temperature.png" alt="">  {{weather.list[0].main.temp}}°C</h2>
+                <span>Hissedilen: {{weather.list[0].main.feels_like}} °C </span>              
+            </div>
+        </div>
+        <div class="weather-card" style="padding-top: 20%;" ng-if="!weather">
+            <h3>Lütfen şehir seçiniz.</h3>
+        </div>
+    </div>
+    <div class="btn-container" >
+        <!-- <a class="btn" id="detail" ng-href="#!/detail?city={{ currentCity }}" ng-click="setCity(currentCity)">DETAYA GİT >>></a> -->
+        <a class="btn" id="detail" ng-href="#!/detail">DETAYA GİT <img style="max-width: 10px;"src="images/next.png" alt=""></a>
+    </div>
+</div>
