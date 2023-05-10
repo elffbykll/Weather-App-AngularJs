@@ -1,6 +1,7 @@
 # Weather-App-AngularJs 
 ###### Hava-Durumu-Uygulaması-AngularJs
 This project displays weather data using the OpenWeatherMap API. It is built using HTML, CSS, and ANGULARJS.   
+  
 Bu proje, OpenWeatherMap API'sini kullanarak hava durumu verilerini gösterir. HTML CSS ANGULARJS kullanılarak yapılmıştır.
 
 ### Get Started (Başlarken) 
