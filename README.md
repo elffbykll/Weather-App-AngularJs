@@ -6,7 +6,9 @@ Bu proje, OpenWeatherMap API'sini kullanarak hava durumu verilerini gösterir. H
 
 ### Get Started (Başlarken) 
 To run this project, you will need to obtain an API key from OpenWeatherMap API. You can follow the steps below to add your API key to the project:  
-Bu projeyi çalıştırmak için, OpenWeatherMap API'sinden bir API anahtarı almanız gerekiyor. Aşağıdaki adımları izleyerek API anahtarınızı projeye ekleyebilirsiniz:    
+Bu projeyi çalıştırmak için, OpenWeatherMap API'sinden bir API anahtarı almanız gerekiyor. Aşağıdaki adımları izleyerek API anahtarınızı projeye ekleyebilirsiniz:  
+
+
 **_English_**
 
 - 1.Go to the OpenWeatherMap website: https://home.openweathermap.org/users/sign_up
