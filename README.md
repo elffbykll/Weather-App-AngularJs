@@ -37,5 +37,5 @@ Bu projeyi çalıştırmak için, OpenWeatherMap API'sinden bir API anahtarı al
 
 # ScreenShots
 -Herhangi bir şehir seçiniz.  ![alt text](screenshots/1.png)  
-- Şehrin hava durumu bilgileri verildi.  ![alt text](screenshots/2.png)  
+- Örneğin İstanbul seçelim. İstanbul hava durumu bilgileri verildi.  ![alt text](screenshots/2.png)  
 - Detaya git butonuna basın. Geri dönmek için Anasayfaya Git butonuna basın.  ![alt text](screenshots/3.png)  
