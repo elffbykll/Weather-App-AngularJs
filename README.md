@@ -1,11 +1,11 @@
 # Weather-App-AngularJs 
 ###### Hava-Durumu-Uygulaması-AngularJs
-This project displays weather data using the OpenWeatherMap API. It is built using HTML, CSS, and ANGULARJS.  
+This project displays weather data using the OpenWeatherMap API. It is built using HTML, CSS, and ANGULARJS.   
 Bu proje, OpenWeatherMap API'sini kullanarak hava durumu verilerini gösterir. HTML CSS ANGULARJS kullanılarak yapılmıştır.
 
 ### Get Started (Başlarken) 
 To run this project, you will need to obtain an API key from OpenWeatherMap API. You can follow the steps below to add your API key to the project:  
-Bu projeyi çalıştırmak için, OpenWeatherMap API'sinden bir API anahtarı almanız gerekiyor. Aşağıdaki adımları izleyerek API anahtarınızı projeye ekleyebilirsiniz:  
+Bu projeyi çalıştırmak için, OpenWeatherMap API'sinden bir API anahtarı almanız gerekiyor. Aşağıdaki adımları izleyerek API anahtarınızı projeye ekleyebilirsiniz:    
 **_English_**
 
 - 1.Go to the OpenWeatherMap website: https://home.openweathermap.org/users/sign_up
